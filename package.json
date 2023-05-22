@@ -1,0 +1,37 @@
+{
+  "name": "cn_authentication_system",
+  "version": "1.0.0",
+  "description": "a complete authentication system which can be used as a starter code for creating any new",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tamanash-unr/cn_authentication_system.git"
+  },
+  "keywords": [
+    "Authentication"
+  ],
+  "author": "Tamanash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tamanash-unr/cn_authentication_system/issues"
+  },
+  "homepage": "https://github.com/Tamanash-unr/cn_authentication_system#readme",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.3",
+    "kue": "^0.11.6",
+    "mongoose": "^7.2.0",
+    "nodemailer": "^6.9.2",
+    "passport": "^0.6.0",
+    "passport-google-oauth": "^2.0.0",
+    "passport-jwt": "^4.0.1"
+  }
+}
