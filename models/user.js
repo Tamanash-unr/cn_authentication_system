@@ -16,7 +16,12 @@ const userSchema = new mongoose.Schema({
     },
     avatar:{
         type: String
+    },
+    resetLink:{
+        type: String,
+        default:''
     }
+    
 },{
     timestamps: true
 });

@@ -1,0 +1,71 @@
+body{
+    background-image: url('/images/background-tech.jpg');
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+.auth-container{
+    background-color: white;
+    width: 25%;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 8%;
+}
+
+.auth-form{
+    text-align: center;
+}
+
+.auth-form>h2{
+    margin-top: 5px;
+}
+
+.auth-form>img{
+    margin-top: 20px;
+}
+
+.auth-form>form{
+    flex-direction: column;
+}
+
+input{
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.forgotPswd{
+    align-self: self-end;
+    margin-bottom: 25px !important;
+}
+
+button{
+    background-color: white;
+    padding: 20px !important;
+}
+
+.auth-form>form>div{
+    margin-bottom: 10px;
+}
+
+.btn{
+    text-decoration: none;
+}
+
+.btn-primary{
+    width: 250px;
+    height: 30px;
+    font-size: 16px;
+    border: 1px solid rgb(53, 53, 209);
+    border-radius: 15px;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btn-primary:hover{
+    background-color: rgb(53, 53, 209);
+    color: white;
+}

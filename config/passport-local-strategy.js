@@ -1,5 +1,6 @@
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
+const CryptoJS = require('crypto-js');
 
 const User = require('../models/user');
 
@@ -11,7 +12,7 @@ passport.use(new LocalStrategy({
     function(req, email, password, done){
         // Find User and Establish Identity
         User.findOne({email: email}).then((user)=>{
-            if(!user || user.password != password){
+            if(!user || user.password != CryptoJS.MD5(password).toString()){
                 console.log("Invalid Username/Password");
                 req.flash('error', "Invalid Username/Password");
                 return done(null, false);

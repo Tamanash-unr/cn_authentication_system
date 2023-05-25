@@ -1,0 +1,8 @@
+<div>
+    Hello <%= user.name %>!
+    <p>
+        Here is your password reset link: <br>
+        <a href="<%= clientUrl %>/users/update-password/<%= token %>"><%= clientUrl %>/users/update-password/<%= token %></a>
+    </p>
+    This reset link is only valid for 5 minutes.
+</div>
