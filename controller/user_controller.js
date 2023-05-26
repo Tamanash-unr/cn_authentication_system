@@ -47,7 +47,6 @@ module.exports.resetPassword = function(req, res) {
 module.exports.signUp = function(req, res) {
     if(req.isAuthenticated()){
         req.flash('warning', "Already Logged In!");
-        return res.redirect('/users/profile');
     }
 
     return res.render('user_SignUp', {
@@ -59,7 +58,7 @@ module.exports.signUp = function(req, res) {
 module.exports.signIn = function(req, res) {
     if(req.isAuthenticated()){
         req.flash('warning', "Already Logged In!");
-        return res.redirect('/users/profile');
+        return res.redirect('/');
     }    
     
     return res.render('user_SignIn', {
