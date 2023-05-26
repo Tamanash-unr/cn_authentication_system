@@ -1,4 +1,5 @@
 {
+    // Method to handle click on forgot password link
     let forgotPassword = function(){
         let forgotPswdLink = $('#forgot-password');
 

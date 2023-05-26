@@ -3,14 +3,17 @@
         <h2>Authsys</h2>
     </a>
     <ul>
+        <!-- Check if user is Logged In -->
         <% if(locals.user) { %>
             <li>
+                <!-- Reset Password Button -->
                 <a href="/users/reset-password">
                     <i class="fas fa-key"></i>
                     Reset Password
                 </a>
             </li>
             <li>
+                <!-- Sign Out Button -->
                 <a href="/users/sign-out">
                     <i class="fas fa-sign-out-alt"></i>
                     Sign Out
@@ -18,12 +21,14 @@
             </li>
         <% } else { %>
             <li>
+                <!-- Sign In Button -->
                 <a href="/users/sign-in">
                     <i class="fas fa-sign-in-alt"></i>
                     Sign In
                 </a>
             </li>
             <li>
+                <!-- Sign Up Button -->
                 <a href="/users/sign-up">
                     <i class="fas fa-user-plus"></i>
                     Sign Up

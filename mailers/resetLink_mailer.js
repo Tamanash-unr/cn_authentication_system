@@ -1,7 +1,9 @@
+
 const nodemailer = require('../config/nodemailer');
 const env = require('../config/environment');
 
 exports.sendResetLink = (user, token)=>{
+    // Get Html format for email from ejs file
     let htmlString = nodemailer.renderTemplate({user: user, clientUrl: env.client_url, token: token}, '/resetLink.ejs');
 
     nodemailer.transporter.sendMail({

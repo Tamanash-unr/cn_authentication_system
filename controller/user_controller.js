@@ -7,12 +7,14 @@ const jwt = require('jsonwebtoken');
 const queue = require('../config/kue');
 const resetLinkWorker = require('../worker/resetLink_email_worker');
 
+// Show reset password page after logging in.
 module.exports.showResetPassword = function(req, res){
     return res.render('user_ResetPassword', {
         title: "Authsys | Reset Password"
     })
 }
 
+// Handle reset password for user after logging in.
 module.exports.resetPassword = function(req, res) {
     User.findById(req.params.id).then((user)=>{
         if(user){
@@ -169,6 +171,7 @@ module.exports.forgotPassword = function(req, res){
     })
 }
 
+// Show reset password page when user clicks on reset link sent on email
 module.exports.showUpdatePassword = function(req, res){
     User.findOne({resetLink: req.params.token}).select('email').then((user)=>{
         if(user){
@@ -187,6 +190,7 @@ module.exports.showUpdatePassword = function(req, res){
     });
 }
 
+// Handle password update for user on submit in Forgot Password
 module.exports.updateForgotPassword = function(req, res){
     jwt.verify(req.params.token, env.jwt_secretKey, function(error, decodedData){
        if(error){

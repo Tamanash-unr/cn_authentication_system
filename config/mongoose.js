@@ -1,6 +1,8 @@
+// Require Mongoose and Environment config
 const mongoose = require('mongoose');
 const env = require('./environment');
 
+// Setup Mongoose Connection
 mongoose.connect(`mongodb://127.0.0.1/${env.db}`);
 
 const db = mongoose.connection;
