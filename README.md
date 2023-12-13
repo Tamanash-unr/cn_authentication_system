@@ -1,7 +1,11 @@
 # cn_authentication_system
 A complete Authentication System which can be used as a starter code for creating any new application
 
+![Scr1](https://github.com/Tamanash-unr/cn_authentication_system/assets/78737123/2ffaa8b2-1eed-4b55-abf8-3f1c0db364af)
+![Scr2](https://github.com/Tamanash-unr/cn_authentication_system/assets/78737123/12880a6c-8eb5-4085-b24e-7733d02c7809)
+
 System Requirements:
+
 - Node JS v10 or higher
 - Mongo DB
 - Redis Server
